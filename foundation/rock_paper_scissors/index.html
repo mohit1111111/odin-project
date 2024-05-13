@@ -2,12 +2,38 @@
 <html lang="eng">
   <head>
     <meta charset="utf-8">
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
     <title>Rock Paper Scissor</title>
+    <style>
+      html {
+       height: 100%;
+    }
+      body{
+        min-height: 100%;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      button{
+        font-size: medium;
+        margin: 4px;
+        padding: 8px;
+      }
+      p{
+        margin-bottom: 12px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div>
+      <h3></h3>
+      <p></p>
+    <button id="Rock">Rock</button>
+    <button id ="Paper">Paper</button>
+    <button id = "Scissor">Scissor</button>
+    
+    </div>
   </body>
 </html>
