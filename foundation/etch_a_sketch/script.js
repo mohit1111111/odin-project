@@ -39,4 +39,4 @@ btn.addEventListener("click",()=>{
 
 })
 
-createGrid(5);
+createGrid(16);
