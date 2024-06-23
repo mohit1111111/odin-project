@@ -30,14 +30,16 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  height: 100vh;
 }
 
 
 .imagecontainer {
   position: relative;
+  width: 25%;
 }
 .treeimage {
-  height: 100vh;
+  height: 100%;
 }
 .card {
   width: 100%;
