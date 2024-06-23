@@ -1,0 +1,126 @@
+/*Photo by Luis del Río from Pexels: https://www.pexels.com/photo/person-walking-between-green-forest-trees-15286/*/
+@import "modern-normalize";
+
+@font-face {
+  font-family: "norse";
+  src: url(font/Norse-Bold.otf) format(opentype);
+}
+
+
+
+ol[role="list"],
+ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+.imagecontainer {
+  position: relative;
+}
+.treeimage {
+  height: 100vh;
+}
+.card {
+  width: 100%;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.479);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+img[alt="odin logo"]{
+  height: 80%;
+}
+#logo-name{
+  font-size: 5rem;
+  font-family: 'norse';
+  color:white;
+}
+
+
+
+.signupcontainer {
+  width: 75%;
+}
+.upper {
+  background-color: rgb(236, 236, 236);
+  padding: 1rem;
+  padding-left: 2.5rem;
+}
+.text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+p {
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+
+.formcontainer{
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+input,label{
+  display: block;
+}
+#inputcontainer{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#inputcontainer div{
+  margin-top: 1.5rem;
+}
+input{
+  height: 1.5em;
+  outline: none;
+  border: 2px solid rgb(189, 189, 189);
+  border-radius: 4px;
+}
+input:focus{
+  border-color: rgb(65, 65, 255);
+}
+input:invalid{
+  border-color: crimson;
+}
+
+
+.lower{
+  margin-top: 48px;
+}
+button{
+  border: none;
+  width: 12rem;
+  height: 3rem;
+  background-color: #596D48;
+  font-size: 1rem;
+  color: white;
+  border-radius: 8px;
+}
