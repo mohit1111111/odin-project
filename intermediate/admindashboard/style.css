@@ -1,0 +1,274 @@
+
+@font-face {
+    font-family: "montserrat";
+    src: url("font/Montserrat-VariableFont_wght.woff2") format("woff2 supports variations");
+    font-weight: 100 1000;
+}
+html{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+body{
+    width:100%;
+    height: 100%;
+    
+}
+#profile-img{
+    height:2em;
+    vertical-align: middle;
+    border-radius: 100px;
+}
+#dashboard{
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+#sidebar{
+    grid-column: 1/2;
+
+    background-color:#0891b2;
+    padding-left: 12px;
+    color: #f1f5f9;
+    padding-top: 12px;
+
+    
+}
+svg{
+    height: 1em;
+    width: 1em;
+    vertical-align:middle;
+    
+    margin:auto;
+    padding:0;
+   
+    
+    
+}
+li svg{
+    vertical-align: text-top;
+    margin-right: 12px;
+    
+    fill: #f1f5f9;
+}
+ul{
+    list-style-type: none;
+    padding:12px;
+    margin-top: 24px;
+    
+}
+li{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+#list-dashboard{
+
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 0.1;
+    font-weight: 600;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns:  45px max-content;
+    justify-items: center;
+    align-items: center;
+    gap:4px;
+    padding:0;
+}
+#list-dashboard svg{
+ height: 1.5em;
+ width: 1.5em;
+ fill: #f1f5f9;
+}
+
+
+
+#main{
+    grid-column: 2/3;
+    background-color:#d3d5d8;
+    
+}
+#top-section{
+    height: 128px;
+    background-color: white;
+    padding-left:32px ;
+    box-shadow: 2px 2px 4px rgba(80, 80, 80, 0.623);
+    padding-top: 8px;
+    padding-right: 32px;
+}
+#search-section{
+    height:50%;
+    
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: 3fr 1fr;
+    font-size: 20px;
+
+
+}
+
+#search{
+    width: 80%;
+    height: 24px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: #c6cbd3;
+
+}
+#user-control{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#user-info{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 32px;
+    img{
+        height: 50px;
+        border-radius: 50px;
+    }
+}
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(3,75px);
+    gap: 20px;
+    justify-content: end;
+    
+    align-items: center;
+    button{
+        background-color: #0891b2;
+        height: 30px;
+        width: 70px;
+        border-radius: 20px;
+        color: #e5e7eb;
+        font-size: 12px;
+        font-weight: 600;
+        border: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+#article{
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    padding-top: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 16px;
+    h4{
+        margin: 3px;
+    }
+}
+.cards{
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    
+    
+
+}
+.card{
+    padding:12px;
+    background-color: white;
+    border-left:8px solid orange;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(80, 80, 80, 0.623);
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-column: 5fr 1fr;
+}
+#article .card h4{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-left: 0;
+
+}
+.card p{
+    font-size: 12px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.card div{
+    justify-items: end;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    svg{
+        margin:auto;
+    }
+}
+
+#extra{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: calc(100%/2)px;
+    
+    gap:32px;
+}
+#anouncement{
+    background-color: white;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px rgba(80, 80, 80, 0.623);
+
+    p{
+        font-size:12px;
+        max-height: 3.7em;
+        width: 80%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        color:#525252;
+        
+    }
+    hr{
+        background-color: gray;
+        margin-top: 8px;
+        border-radius: 16px;
+
+    }
+    h4{
+        margin-left:0;
+    }
+}
+#trending{
+    background-color: white;
+    padding: 22px;
+    border-radius: 16px;
+    display: grid;
+    box-shadow: 2px 2px 4px rgba(80, 80, 80, 0.623);
+    padding:12px;
+
+
+
+}
+.profile{
+    margin: 12px;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    p{
+        font-size: 12px;
+        color:#525252;
+    }
+
+}
