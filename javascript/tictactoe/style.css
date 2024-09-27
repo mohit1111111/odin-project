@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: "montserrat";
+    src: url("font/Montserrat-VariableFont_wght.woff2") format("woff2 supports variations");
+    font-weight: 100 1000;
+}
+*{
+    font-family: montserrat;
+}
+html{
+    height: 100%;
+}
+
+
+
+body{
+    height: 100%;
+    background-color: #7c3aed; /* Dark gray color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#display{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#x,#o{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    padding:12px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+    border-radius: 24px;
+    p{
+        font-size: 64px;
+        margin: 0;
+    }
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+
+}
+#x{
+    color: orange;
+}
+#o{
+    color: #fbbf24;
+}
+#scoreboxX,#scoreboxO{
+    border-bottom: 2px solid whitesmoke;
+    box-sizing: border-box;
+}
+#gameboard{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+
+    gap:8px;
+}
+#gameboard div{
+    background-color: #5b21b6;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: 300;
+}
+#gameboard div:hover{
+    background-color: #6d28d9;
+}
+
+dialog{
+    width: 300px;
+    height: 150px;
+    font-size: 30px;
+    border: 4px solid #4f46e5;
+    background-color: #e0e7ff;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    button{
+        width: 80%;
+        height: 32px;
+        font-size: 16px;
+        background-color: #3730a3;
+        border: none;
+        border-radius: 8px;
+        color:#e0e7ff;
+    }
+}
+dialog::backdrop{
+    backdrop-filter: blur(1px);
+}
+
+
